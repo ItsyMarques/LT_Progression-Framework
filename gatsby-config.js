@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Monzo Progression',
+    title: 'Leadtech Progression Framework',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'progression-framework',
-        short_name: 'progression-framework',
+        name: 'Leadtech Progression Framework',
+        short_name: 'Leadtech Progression',
         start_url: '/',
         background_color: '#14233c',
         theme_color: '#14233c',

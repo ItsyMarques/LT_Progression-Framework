@@ -1,15 +1,15 @@
 <p align="center">
-  <a href="https://www.monzo.com">
-    <img alt="Monzo favicon" src="https://d33wubrfki0l68.cloudfront.net/673084cc885831461ab2cdd1151ad577cda6a49a/92a4d/static/images/favicon.png" width="60" />
+  <a href="https://www.leadtech.com">
+    <img alt="Leadtech logo" src="src/images/favicon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-    Progression at Monzo
+    Progression at Leadtech
 </h1>
 
-🎉 Welcome to the Progression at Monzo repository
+🎉 Welcome to the Leadtech Progression Framework repository
 
-This is where all of Monzo's progression frameworks live, as well as the site that powers `progression.monzo.com` 💪
+This is where all of Leadtech's progression frameworks live, as well as the site that powers our progression framework. 💪
 
 **Get stuck? There's a glossary at the bottom of this readme!**
 
@@ -22,36 +22,37 @@ GitHub is an online service that we use to store our code, designs, and more. Gi
 We mainly use GitHub in Engineering, as it allows engineers to review each others code, making sure we have a tidy codebase and (hopefully!) stopping some bugs from crawling through the cracks 🐛
 
 We're using GitHub to store our progression frameworks for a few reasons:
-- It's public (or open source), meaning we can share this with the community and allow them to contribute!
-- Monzonauts can "own" or manage a framework (or frameworks), meaning they get to control any changes or additions in that area
+- It's transparent and accessible to all team members
+- Team leads can "own" or manage a framework (or frameworks), meaning they get to control any changes or additions in that area
 - It means we can build a super fast site 🚀
+- Version control allows us to track changes over time
 
 ## ❔ How does this work?
 
 This is the structure of our repo
 ```
-progression-framework/
+LT_Progression-Framework/
     frameworks/
     src/
     CODEOWNERS
     [a bunch of config files]
 ```
 
-`site` contains our website files, `frameworks` contains our progression framework files, and `CODEOWNERS` is the file that defines who owns or manages a framework, file or folder.
+`src` contains our website files, `frameworks` contains our progression framework files, and `CODEOWNERS` is the file that defines who owns or manages a framework, file or folder.
 All the other files are configuration, which you should totally ignore 👌
 
 **The `frameworks` folder is what you want to pay attention to!**
 
 
-This is where all of our progression frameworks live. Head inside, and you'll see folders associated to headlines (like design and engineering).
+This is where all of our progression frameworks live. Head inside, and you'll see folders associated to departments (like design and engineering).
 
-Inside these folders, you'll see files representing a job (like `designer.md`). 
+Inside these folders, you'll see files representing a role (like `backend.md`).
 
 ---
 
-Files that end in `.md` are called Markdown files. We display these files on the site in the same way they are written, so you can put whatever you want  (within reason) in these.
+Files that end in `.md` are called Markdown files. We display these files on the site in the same way they are written, so you can put whatever you want (within reason) in these.
 
-All of these file contain some YAML, which a data format that is similar to a bullet point list. Some of this YAML data is compulsory, as it helps the site build 🛠️
+All of these files contain some YAML, which is a data format that is similar to a bullet point list. Some of this YAML data is compulsory, as it helps the site build 🛠️
 
 Some files contain the compulsory YAML and the rest is Markdown, however some of these files *only* contain YAML.
 The files containing only YAML are more structured, and so look a bit different to the Markdown files.
@@ -78,11 +79,11 @@ topics:
     content:
       - level: 1
         criteria:
-          - "Clearly articulates what they’re working on and why."
-          - "Gives clear concise updates in team meeting and stand ups on material which is relevant for the team"
+          - "Clearly articulates what they're working on and why."
+          - "Gives clear concise updates in team meetings and stand ups on material which is relevant for the team"
       - level: 2
         criteria:
-          - "Proactively communicates with stakeholders and tailors communication to audience. Keeps stakeholders like COps, legal, marketing, finance updated on progress and ensures they have what they need."
+          - "Proactively communicates with stakeholders and tailors communication to audience."
           - "Gives clear concise updates in cross-team meetings on material which is relevant for the teams"
   - name: "conduct"
     title:
@@ -91,12 +92,12 @@ topics:
         criteria:
           - "Follows policies and procedures applicable to role. Completes training."
           - "Accepts feedback graciously and acts on it. Gives feedback when requested"
-          - "Builds relationships within monzo and contributes to building a supportive, knowledgable and engaged peer group"
+          - "Builds relationships within Leadtech and contributes to building a supportive, knowledgeable and engaged peer group"
         exampleCriteria:
-          -  criteria: "A criteria with an example point goes here"
-             examples:
-               - "The example goes here"
-               - "Another example may go here"
+          - criteria: "A criteria with an example point goes here"
+            examples:
+              - "Example 1"
+              - "Another example may go here"
 ---
 ### 🏠 Welcome to the Backend engineering home page
 ```
@@ -110,7 +111,7 @@ You can also add examples, by putting them in the `exampleCriteria` object, defi
 
 ---
 
-If you need any help and are a Monzonaut, ping @lucas a message or put a message in #org-scaling. Otherwise, feel free to raise an issue here in GitHub.
+If you need any help, please reach out to the People Operations team or raise an issue here in GitHub.
 
 ## ✏️ How do I edit a framework?
 
@@ -125,7 +126,7 @@ This will automatically save your changes and open a pull request, allowing the 
 
 **Repository (Repo)**: A folder in GitHub where files live
 
-*If you've seen the word 'repo', we're probably talking about the Progression Framework folder in GitHub that you're on right now (https://github.com/monzo/progression-framework)*
+*If you've seen the word 'repo', we're probably talking about the Progression Framework folder in GitHub that you're on right now*
 
 **Pull Request (PR)**: A request to change a file, or multiple files on GitHub
 
@@ -137,4 +138,32 @@ This will automatically save your changes and open a pull request, allowing the 
 
 
 ### 🤓 Looking for technical documentation?
-Take a look at the readme in the `src/` directory (https://github.com/monzo/progression-framework/blob/master/src/README.md)
+Take a look at the readme in the `src/` directory
+
+---
+
+## 📝 About This Framework
+
+This framework is based on [Monzo's open-source progression framework](https://github.com/monzo/progression-framework), adapted and customized for Leadtech's culture, values, and role structures.
+
+## 🛠️ Technical Stack
+
+- **Gatsby.js** - Static site generator
+- **React** - UI components
+- **Styled Components** - Styling
+- **Netlify** - Deployment
+
+## 🚀 Local Development
+
+```bash
+# Install dependencies
+yarn install
+
+# Start development server
+gatsby develop
+
+# Build for production
+gatsby build
+```
+
+Visit `http://localhost:8000` to see the site locally.
